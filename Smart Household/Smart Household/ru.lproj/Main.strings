@@ -1,0 +1,12 @@
+
+/* Class = "UITextField"; placeholder = "Логин:"; ObjectID = "0yr-gL-mHc"; */
+"0yr-gL-mHc.placeholder" = "Логин:";
+
+/* Class = "UITextField"; placeholder = "Пароль:"; ObjectID = "Nhb-nn-pmg"; */
+"Nhb-nn-pmg.placeholder" = "Пароль:";
+
+/* Class = "UILabel"; text = "Smart Household"; ObjectID = "XsA-N1-uWT"; */
+"XsA-N1-uWT.text" = "Smart Household";
+
+
+"hRG-0m-M2Y.configuration.title" = "Войти";
