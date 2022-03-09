@@ -1,12 +1,45 @@
 
-/* Class = "UITextField"; placeholder = "Логин:"; ObjectID = "0yr-gL-mHc"; */
+/* Class = "UITextField"; placeholder = "Username:"; ObjectID = "0yr-gL-mHc"; */
 "0yr-gL-mHc.placeholder" = "Логин:";
 
-/* Class = "UITextField"; placeholder = "Пароль:"; ObjectID = "Nhb-nn-pmg"; */
+/* Class = "UILabel"; text = "Version 0.0.1"; ObjectID = "Ayz-AX-RGv"; */
+"Ayz-AX-RGv.text" = "Версия 0.0.1";
+
+/* Class = "UILabel"; text = "Smart Household"; ObjectID = "Cac-vk-bUm"; */
+"Cac-vk-bUm.text" = "Smart Household";
+
+/* Class = "UINavigationItem"; title = "Smart Household"; ObjectID = "GqZ-en-A4e"; */
+"GqZ-en-A4e.title" = "Smart Household";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "JjQ-LU-DFL"; */
+"JjQ-LU-DFL.title" = "Назад";
+
+/* Class = "UITabBarItem"; title = "Chemicals"; ObjectID = "KyC-On-eCQ"; */
+"KyC-On-eCQ.title" = "Бытовая химия";
+
+/* Class = "UITextField"; placeholder = "Password:"; ObjectID = "Nhb-nn-pmg"; */
 "Nhb-nn-pmg.placeholder" = "Пароль:";
 
 /* Class = "UILabel"; text = "Smart Household"; ObjectID = "XsA-N1-uWT"; */
 "XsA-N1-uWT.text" = "Smart Household";
 
+/* Class = "UITabBarItem"; title = "Shopping List"; ObjectID = "g1l-rf-urI"; */
+"g1l-rf-urI.title" = "Список покупок";
 
-"hRG-0m-M2Y.configuration.title" = "Войти";
+/* Class = "UITabBarItem"; title = "Products"; ObjectID = "h3O-c8-PqM"; */
+"h3O-c8-PqM.title" = "Продукты";
+
+/* Class = "UIButton"; configuration.title = "Sign in"; ObjectID = "hRG-0m-M2Y"; */
+"hRG-0m-M2Y.configuration.title" = "Вход";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hRG-0m-M2Y"; */
+"hRG-0m-M2Y.normalTitle" = "Кнопка";
+
+/* Class = "UINavigationItem"; title = "Smart Household"; ObjectID = "s5s-tk-7J1"; */
+"s5s-tk-7J1.title" = "Smart Household";
+
+/* Class = "UITabBarController"; title = "Smart Household"; ObjectID = "tJu-NN-15t"; */
+"tJu-NN-15t.title" = "Smart Household";
+
+/* Class = "UINavigationItem"; title = "Smart Household"; ObjectID = "tLx-lf-paN"; */
+"tLx-lf-paN.title" = "Smart Household";

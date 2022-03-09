@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tJu-NN-15t">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -62,10 +62,203 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.40000000000001" y="137.18140929535232"/>
+            <point key="canvasLocation" x="73" y="822"/>
+        </scene>
+        <!--Smart Household-->
+        <scene sceneID="b0S-jJ-UrH">
+            <objects>
+                <viewController id="y0O-VP-Yhu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M0Y-XO-lDq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dQq-mR-tj8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Smart Household" id="GqZ-en-A4e">
+                        <barButtonItem key="rightBarButtonItem" image="questionmark" catalog="system" id="RXU-ln-1Q2">
+                            <connections>
+                                <segue destination="Sfj-ZX-uta" kind="show" id="nKo-Md-tn4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cw3-YD-4XE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2728.8000000000002" y="662.51874062968523"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Qt6-Ki-GvO">
+            <objects>
+                <viewController id="Sfj-ZX-uta" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UJQ-0F-Zxh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart Household" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cac-vk-bUm">
+                                <rect key="frame" x="52" y="104" width="271" height="43"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 0.0.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayz-AX-RGv">
+                                <rect key="frame" x="139.5" y="323" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Mj-Ap-oyW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ayz-AX-RGv" firstAttribute="centerX" secondItem="UJQ-0F-Zxh" secondAttribute="centerX" id="Bba-XX-TyD"/>
+                            <constraint firstItem="Ayz-AX-RGv" firstAttribute="centerY" secondItem="UJQ-0F-Zxh" secondAttribute="centerY" id="J5K-il-PTw"/>
+                            <constraint firstItem="Cac-vk-bUm" firstAttribute="centerX" secondItem="UJQ-0F-Zxh" secondAttribute="centerX" id="erM-SK-gZZ"/>
+                            <constraint firstItem="Cac-vk-bUm" firstAttribute="top" secondItem="8Mj-Ap-oyW" secondAttribute="top" constant="60" id="nCi-OL-oKA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kSZ-qV-TmP">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="JjQ-LU-DFL"/>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LeJ-JM-LXD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3863" y="382"/>
+        </scene>
+        <!--Smart Household-->
+        <scene sceneID="v4n-vC-LKM">
+            <objects>
+                <viewController id="7AX-jT-CGo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TdJ-Kl-OWd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="AGZ-23-3cl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Smart Household" id="tLx-lf-paN">
+                        <barButtonItem key="rightBarButtonItem" image="questionmark" catalog="system" id="0M5-Dt-gST">
+                            <connections>
+                                <segue destination="Sfj-ZX-uta" kind="show" id="eEL-Ou-Cnj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Yd-IR-OTe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2728.8000000000002" y="1362.3688155922041"/>
+        </scene>
+        <!--Smart Household-->
+        <scene sceneID="nGh-ra-w8K">
+            <objects>
+                <viewController id="itA-fA-1xu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pcj-5I-IdV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="EsQ-fR-AHx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Smart Household" id="s5s-tk-7J1">
+                        <barButtonItem key="rightBarButtonItem" image="questionmark" catalog="system" id="wJ9-hP-g9M">
+                            <connections>
+                                <segue destination="Sfj-ZX-uta" kind="show" id="nb1-qm-kXE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="daY-wM-fv1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2730.4000000000001" y="-30.134932533733135"/>
+        </scene>
+        <!--Smart Household-->
+        <scene sceneID="RGT-so-wjl">
+            <objects>
+                <tabBarController title="Smart Household" id="tJu-NN-15t" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Nl9-pI-i83">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="owq-wX-Utf" kind="relationship" relationship="viewControllers" id="hZ0-FW-2Ta"/>
+                        <segue destination="97Q-Ir-pyP" kind="relationship" relationship="viewControllers" id="DNi-QW-na5"/>
+                        <segue destination="m2W-JY-IsC" kind="relationship" relationship="viewControllers" id="Stj-ej-c4Z"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O7l-Ru-q4P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="871" y="275"/>
+        </scene>
+        <!--Shopping List-->
+        <scene sceneID="JeS-bF-18S">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="owq-wX-Utf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Shopping List" image="list.bullet.rectangle.portrait" catalog="system" id="g1l-rf-urI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v64-Y2-8Sb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="itA-fA-1xu" kind="relationship" relationship="rootViewController" id="Rz9-Bk-BFu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n8g-NS-3gZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1791.2" y="-30.134932533733135"/>
+        </scene>
+        <!--Products-->
+        <scene sceneID="2Or-jq-54y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="97Q-Ir-pyP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Products" image="takeoutbag.and.cup.and.straw" catalog="system" id="h3O-c8-PqM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lc3-nc-4Qs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="y0O-VP-Yhu" kind="relationship" relationship="rootViewController" id="OLv-Qe-kQY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dzi-6T-Z6l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1789.5999999999999" y="662.51874062968523"/>
+        </scene>
+        <!--Chemicals-->
+        <scene sceneID="0pI-eb-3N3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m2W-JY-IsC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chemicals" image="testtube.2" catalog="system" id="KyC-On-eCQ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2rS-5d-2Zr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7AX-jT-CGo" kind="relationship" relationship="rootViewController" id="Foe-Uw-4wc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1xg-5u-qqx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1789.5999999999999" y="1362.3688155922041"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="nb1-qm-kXE"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
+        <image name="questionmark" catalog="system" width="96" height="128"/>
+        <image name="takeoutbag.and.cup.and.straw" catalog="system" width="128" height="110"/>
+        <image name="testtube.2" catalog="system" width="128" height="118"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

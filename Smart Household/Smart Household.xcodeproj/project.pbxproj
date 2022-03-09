@@ -16,8 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7554FF3727B826C100A10963 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
-		7554FF3827B826D700A10963 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		7545EF5E27D91FFD00868F55 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		7545EF6027D9215900868F55 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		7554FF3927B82D3500A10963 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		75821B3C2731C090001DC20D /* Smart Household.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Household.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75821B3F2731C090001DC20D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				75821B462731C090001DC20D /* Base */,
-				7554FF3727B826C100A10963 /* ru */,
+				7545EF6027D9215900868F55 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -163,7 +163,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				75821B4B2731C094001DC20D /* Base */,
-				7554FF3827B826D700A10963 /* ru */,
+				7545EF5E27D91FFD00868F55 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
