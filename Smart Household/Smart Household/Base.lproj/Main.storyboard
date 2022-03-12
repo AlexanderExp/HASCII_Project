@@ -67,12 +67,42 @@
         <!--Smart Household-->
         <scene sceneID="b0S-jJ-UrH">
             <objects>
-                <viewController id="y0O-VP-Yhu" sceneMemberID="viewController">
+                <viewController id="y0O-VP-Yhu" customClass="ProductViewController" customModule="Smart_Household" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M0Y-XO-lDq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZmV-62-in2">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Product" id="cAt-PN-Jpe" customClass="ProductCell" customModule="Smart_Household" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cAt-PN-Jpe" id="smM-00-3dP">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AddProduct" id="UoX-4T-3OC" customClass="AddProductCell" customModule="Smart_Household" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UoX-4T-3OC" id="Cah-Ac-KE8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dQq-mR-tj8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZmV-62-in2" firstAttribute="leading" secondItem="dQq-mR-tj8" secondAttribute="leading" id="7ec-KH-opk"/>
+                            <constraint firstItem="ZmV-62-in2" firstAttribute="trailing" secondItem="dQq-mR-tj8" secondAttribute="trailing" id="ECn-Hu-SMz"/>
+                            <constraint firstItem="ZmV-62-in2" firstAttribute="top" secondItem="dQq-mR-tj8" secondAttribute="top" id="gNn-Vr-6eb"/>
+                            <constraint firstItem="ZmV-62-in2" firstAttribute="bottom" secondItem="dQq-mR-tj8" secondAttribute="bottom" id="qfs-fq-HgT"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Smart Household" id="GqZ-en-A4e">
                         <barButtonItem key="rightBarButtonItem" image="questionmark" catalog="system" id="RXU-ln-1Q2">
@@ -81,6 +111,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ProductTableView" destination="ZmV-62-in2" id="8HK-OD-mfg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cw3-YD-4XE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -150,12 +183,42 @@
         <!--Smart Household-->
         <scene sceneID="nGh-ra-w8K">
             <objects>
-                <viewController id="itA-fA-1xu" sceneMemberID="viewController">
+                <viewController id="itA-fA-1xu" customClass="ListViewController" customModule="Smart_Household" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pcj-5I-IdV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="u1Z-B7-OqJ">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Product" id="IBz-hX-Lyv" customClass="ProductCell" customModule="Smart_Household" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IBz-hX-Lyv" id="SaD-cf-j9X">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AddProduct" id="vT9-LH-crn" customClass="AddProductCell" customModule="Smart_Household" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vT9-LH-crn" id="9KI-a5-vWJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="EsQ-fR-AHx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u1Z-B7-OqJ" firstAttribute="top" secondItem="EsQ-fR-AHx" secondAttribute="top" id="7fw-NM-NBx"/>
+                            <constraint firstItem="u1Z-B7-OqJ" firstAttribute="trailing" secondItem="EsQ-fR-AHx" secondAttribute="trailing" id="ErG-zW-ifc"/>
+                            <constraint firstItem="u1Z-B7-OqJ" firstAttribute="bottom" secondItem="EsQ-fR-AHx" secondAttribute="bottom" id="HsJ-8l-xxr"/>
+                            <constraint firstItem="u1Z-B7-OqJ" firstAttribute="leading" secondItem="EsQ-fR-AHx" secondAttribute="leading" id="WNs-uI-dlU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Smart Household" id="s5s-tk-7J1">
                         <barButtonItem key="rightBarButtonItem" image="questionmark" catalog="system" id="wJ9-hP-g9M">
@@ -164,6 +227,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ProductTableView" destination="u1Z-B7-OqJ" id="P35-Va-2s1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="daY-wM-fv1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -246,7 +312,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="nb1-qm-kXE"/>
+        <segue reference="nKo-Md-tn4"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>

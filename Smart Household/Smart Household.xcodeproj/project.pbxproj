@@ -7,17 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		750260F127DCC61E00B0BFE8 /* AddProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750260EF27DCC61E00B0BFE8 /* AddProductCell.swift */; };
+		7545EF6327D9383E00868F55 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7545EF6127D9383D00868F55 /* ProductViewController.swift */; };
+		7545EF6927D93AAE00868F55 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7545EF6727D93AAE00868F55 /* ProductCell.swift */; };
 		7554FF3A27B82D3500A10963 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7554FF3927B82D3500A10963 /* LoginViewController.swift */; };
 		75821B402731C090001DC20D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75821B3F2731C090001DC20D /* AppDelegate.swift */; };
 		75821B422731C090001DC20D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75821B412731C090001DC20D /* SceneDelegate.swift */; };
 		75821B472731C090001DC20D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75821B452731C090001DC20D /* Main.storyboard */; };
 		75821B492731C094001DC20D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75821B482731C094001DC20D /* Assets.xcassets */; };
 		75821B4C2731C094001DC20D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75821B4A2731C094001DC20D /* LaunchScreen.storyboard */; };
+		75C3798127DB9E5800ED5E03 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3798027DB9E5800ED5E03 /* ListViewController.swift */; };
+		75C5004527DCCDE900082824 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C5004727DCCDE900082824 /* ProductCell.xib */; };
+		75C5004A27DCCE0600082824 /* AddProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C5004C27DCCE0600082824 /* AddProductCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7545EF5E27D91FFD00868F55 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		7545EF6027D9215900868F55 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		750260EF27DCC61E00B0BFE8 /* AddProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductCell.swift; sourceTree = SOURCE_ROOT; };
+		7545EF6127D9383D00868F55 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = SOURCE_ROOT; };
+		7545EF6727D93AAE00868F55 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = SOURCE_ROOT; };
 		7554FF3927B82D3500A10963 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		75821B3C2731C090001DC20D /* Smart Household.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Household.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75821B3F2731C090001DC20D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +33,13 @@
 		75821B482731C094001DC20D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75821B4B2731C094001DC20D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75821B4D2731C094001DC20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75C3798027DB9E5800ED5E03 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = SOURCE_ROOT; };
+		75C5004327DCCD5500082824 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		75C5004427DCCD5600082824 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		75C5004627DCCDE900082824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProductCell.xib; sourceTree = "<group>"; };
+		75C5004927DCCDED00082824 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/ProductCell.strings; sourceTree = "<group>"; };
+		75C5004B27DCCE0600082824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AddProductCell.xib; sourceTree = "<group>"; };
+		75C5004E27DCCE0B00082824 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/AddProductCell.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,12 @@
 		75821B3E2731C090001DC20D /* Smart Household */ = {
 			isa = PBXGroup;
 			children = (
+				750260EF27DCC61E00B0BFE8 /* AddProductCell.swift */,
+				75C5004C27DCCE0600082824 /* AddProductCell.xib */,
+				7545EF6727D93AAE00868F55 /* ProductCell.swift */,
+				75C5004727DCCDE900082824 /* ProductCell.xib */,
+				7545EF6127D9383D00868F55 /* ProductViewController.swift */,
+				75C3798027DB9E5800ED5E03 /* ListViewController.swift */,
 				75821B3F2731C090001DC20D /* AppDelegate.swift */,
 				75821B412731C090001DC20D /* SceneDelegate.swift */,
 				7554FF3927B82D3500A10963 /* LoginViewController.swift */,
@@ -129,6 +149,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				75821B4C2731C094001DC20D /* LaunchScreen.storyboard in Resources */,
+				75C5004A27DCCE0600082824 /* AddProductCell.xib in Resources */,
+				75C5004527DCCDE900082824 /* ProductCell.xib in Resources */,
 				75821B492731C094001DC20D /* Assets.xcassets in Resources */,
 				75821B472731C090001DC20D /* Main.storyboard in Resources */,
 			);
@@ -143,6 +165,10 @@
 			files = (
 				7554FF3A27B82D3500A10963 /* LoginViewController.swift in Sources */,
 				75821B402731C090001DC20D /* AppDelegate.swift in Sources */,
+				750260F127DCC61E00B0BFE8 /* AddProductCell.swift in Sources */,
+				75C3798127DB9E5800ED5E03 /* ListViewController.swift in Sources */,
+				7545EF6927D93AAE00868F55 /* ProductCell.swift in Sources */,
+				7545EF6327D9383E00868F55 /* ProductViewController.swift in Sources */,
 				75821B422731C090001DC20D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,7 +180,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				75821B462731C090001DC20D /* Base */,
-				7545EF6027D9215900868F55 /* ru */,
+				75C5004327DCCD5500082824 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -163,10 +189,28 @@
 			isa = PBXVariantGroup;
 			children = (
 				75821B4B2731C094001DC20D /* Base */,
-				7545EF5E27D91FFD00868F55 /* ru */,
+				75C5004427DCCD5600082824 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
+		};
+		75C5004727DCCDE900082824 /* ProductCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75C5004627DCCDE900082824 /* Base */,
+				75C5004927DCCDED00082824 /* ru */,
+			);
+			name = ProductCell.xib;
+			sourceTree = SOURCE_ROOT;
+		};
+		75C5004C27DCCE0600082824 /* AddProductCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75C5004B27DCCE0600082824 /* Base */,
+				75C5004E27DCCE0B00082824 /* ru */,
+			);
+			name = AddProductCell.xib;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 
