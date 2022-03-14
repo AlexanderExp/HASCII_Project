@@ -6,15 +6,51 @@
 //
 
 import UIKit
+import Alamofire
 
 class ProductViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var ProductTableView: UITableView!
+    
+    var ProductID: [Int] = []
+    var ProductNames: [Int:String] = [:]
+    var ProductInfo: [Int:String] = [:]
+    var ProductAmmount: [Int:String] = [:]
+    var ProductMeasure: [Int:String] = [:]
+    var ProductPicture: [Int:String] = [:]
+    var ProductTags: [Int:[String]] = [:]
+    
     override func viewDidLoad() {
+        super.viewDidLoad()
         self.ProductTableView.delegate = self
         self.ProductTableView.dataSource = self
         self.registerTableViewCells()
-        super.viewDidLoad()
+        let AFGroup = DispatchGroup()
+        
+        for i in 1...10 {
+            AFGroup.enter()
+            AF.request("http://192.168.1.80:8000/products/" + String(i)).responseData { response in
+                guard let data = response.value else { return }
+                do {
+                    let serverresponse = try JSONDecoder().decode(ProductJSON.self, from: data)
+                    self.ProductID.append(serverresponse.id)
+                    self.ProductNames[serverresponse.id] = serverresponse.name
+                    self.ProductInfo[serverresponse.id] = serverresponse.description
+                    self.ProductAmmount[serverresponse.id] = serverresponse.count
+                    self.ProductMeasure[serverresponse.id] = serverresponse.measure
+                    self.ProductPicture[serverresponse.id] = serverresponse.picture
+                    self.ProductTags[serverresponse.id] = serverresponse.tag.components(separatedBy: ";")
+                    print(serverresponse.id)
+                } catch {
+                    print(error)
+                }
+                AFGroup.leave()
+            }
+        }
+            
+            AFGroup.notify(queue: .main) {
+                self.ProductTableView.reloadData()
+                }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -26,7 +62,8 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
     // MARK: - Table view data source
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 5
+        print(self.ProductID.count)
+        return self.ProductID.count + 1
     }
 
 

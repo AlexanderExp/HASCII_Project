@@ -20,6 +20,7 @@
 		75C3798127DB9E5800ED5E03 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3798027DB9E5800ED5E03 /* ListViewController.swift */; };
 		75C5004527DCCDE900082824 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C5004727DCCDE900082824 /* ProductCell.xib */; };
 		75C5004A27DCCE0600082824 /* AddProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C5004C27DCCE0600082824 /* AddProductCell.xib */; };
+		75CFDAA327DFBF9200C9322C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFDAA227DFBF9200C9322C /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		75C5004927DCCDED00082824 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/ProductCell.strings; sourceTree = "<group>"; };
 		75C5004B27DCCE0600082824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AddProductCell.xib; sourceTree = "<group>"; };
 		75C5004E27DCCE0B00082824 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/AddProductCell.strings; sourceTree = "<group>"; };
+		75CFDAA227DFBF9200C9322C /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = SOURCE_ROOT; };
 		BB0994658686F309EE8560EF /* Pods-Smart Household.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Household.release.xcconfig"; path = "Target Support Files/Pods-Smart Household/Pods-Smart Household.release.xcconfig"; sourceTree = "<group>"; };
 		F344E4BCC5494CF1EC39212C /* Pods-Smart Household.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Household.debug.xcconfig"; path = "Target Support Files/Pods-Smart Household/Pods-Smart Household.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +90,7 @@
 		75821B3E2731C090001DC20D /* Smart Household */ = {
 			isa = PBXGroup;
 			children = (
+				75CFDAA227DFBF9200C9322C /* Models.swift */,
 				750260EF27DCC61E00B0BFE8 /* AddProductCell.swift */,
 				75C5004C27DCCE0600082824 /* AddProductCell.xib */,
 				7545EF6727D93AAE00868F55 /* ProductCell.swift */,
@@ -234,6 +237,7 @@
 				7554FF3A27B82D3500A10963 /* LoginViewController.swift in Sources */,
 				75821B402731C090001DC20D /* AppDelegate.swift in Sources */,
 				750260F127DCC61E00B0BFE8 /* AddProductCell.swift in Sources */,
+				75CFDAA327DFBF9200C9322C /* Models.swift in Sources */,
 				75C3798127DB9E5800ED5E03 /* ListViewController.swift in Sources */,
 				7545EF6927D93AAE00868F55 /* ProductCell.swift in Sources */,
 				7545EF6327D9383E00868F55 /* ProductViewController.swift in Sources */,

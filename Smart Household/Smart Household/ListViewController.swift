@@ -9,8 +9,23 @@ import UIKit
 
 class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    struct ShoppingList {
+        static let ProductID: [Int] = []
+        static let ProductNames: [Int:String] = [:]
+        static let ProductInfo: [Int:String] = [:]
+        static let ProductAmmount: [Int:Int] = [:]
+        static let ProductMeasure: [Int:String] = [:]
+        static let ProductPicture: [Int:URL] = [:]
+        static let ProductTags: [Int:[String]] = [:]
+    }
+    let defaults = UserDefaults.standard
+    
     @IBOutlet var ProductTableView: UITableView!
     override func viewDidLoad() {
+        defaults.set(ShoppingList.ProductID, forKey: "ProductID")
+        defaults.set(ShoppingList.ProductNames, forKey: "ProductNames")
+        defaults.set(ShoppingList.ProductInfo, forKey: "ProductInfo")
+        defaults.set(ShoppingList.ProductAmmount, forKey: "ProductAmmount")
         self.ProductTableView.delegate = self
         self.ProductTableView.dataSource = self
         self.registerTableViewCells()
@@ -26,7 +41,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     // MARK: - Table view data source
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 3
+        return self.defaults.array(forKey: "ProductID")!.count + 1
     }
 
 
