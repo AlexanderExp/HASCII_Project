@@ -98,6 +98,7 @@ class ChemicalsViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.CellCounter.text = (ProductAmmount[i]! + " " + ProductMeasure[i]!)
         cell.cellID = i
         cellIDs[indexPath.row] = i
+        cell.cellMeasure = ProductMeasure[i]!
         return cell
     }
     

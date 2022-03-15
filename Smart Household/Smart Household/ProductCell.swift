@@ -14,6 +14,7 @@ class ProductCell: UITableViewCell {
     @IBOutlet var CellCounter: UITextField!
     @IBOutlet var CellButtons: UIStepper!
     var cellID = 0
+    var cellMeasure = ""
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,6 +24,9 @@ class ProductCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    @IBAction func ButtonPress(_ sender: Any) {
+        self.CellCounter.text = String(Int(CellButtons.value)) + " " + self.cellMeasure
     }
     
 }

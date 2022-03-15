@@ -98,6 +98,7 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.CellButtons.value = Double(ProductAmmount[i]!)!
         cell.CellCounter.text = (ProductAmmount[i]! + " " + ProductMeasure[i]!)
         cell.cellID = i
+        cell.cellMeasure = ProductMeasure[i]!
         cellIDs[indexPath.row] = i
         return cell
     }

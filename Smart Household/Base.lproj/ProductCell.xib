@@ -32,6 +32,9 @@
                     </textField>
                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Z9j-ab-97q">
                         <rect key="frame" x="16" y="141" width="94" height="32"/>
+                        <connections>
+                            <action selector="ButtonPress:" destination="KGk-i7-Jjw" eventType="primaryActionTriggered" id="Khu-5f-dze"/>
+                        </connections>
                     </stepper>
                     <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ljY-dn-1UI">
                         <rect key="frame" x="16" y="99" width="94" height="34"/>
