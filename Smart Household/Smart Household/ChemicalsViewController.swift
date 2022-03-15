@@ -1,14 +1,14 @@
 //
-//  ListViewController.swift
+//  ChemicalsViewController.swift
 //  Smart Household
 //
-//  Created by Дмитрий Канский on 09.03.2022.
+//  Created by Дмитрий Канский on 15.03.2022.
 //
 
 import UIKit
 import Alamofire
 
-class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, UITextViewDelegate {
+class ChemicalsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, UITextViewDelegate {
     @IBOutlet var ProductTableView: UITableView!
     
     var ProductID: [Int] = []
@@ -34,7 +34,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
                 guard let data = response.value else { return }
                 do {
                     let serverresponse = try JSONDecoder().decode(ProductJSON.self, from: data)
-                    if serverresponse.tag.components(separatedBy: ";")[0] == "***LIST***" {
+                    if serverresponse.tag.components(separatedBy: ";")[0] == "***CHEMICAL***" {
                         self.ProductID.append(serverresponse.id)
                         self.ProductNames[serverresponse.id] = serverresponse.name
                         self.ProductInfo[serverresponse.id] = serverresponse.description
@@ -119,42 +119,6 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
 
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
     /*
     // MARK: - Navigation
 
@@ -164,5 +128,5 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Pass the selected object to the new view controller.
     }
     */
-    
+
 }

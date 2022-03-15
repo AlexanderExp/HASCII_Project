@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		419C634FABAB718BB6E6D907 /* Pods_Smart_Household.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F8FC3A38ADF8F2FB7EE222 /* Pods_Smart_Household.framework */; };
 		750260F127DCC61E00B0BFE8 /* AddProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750260EF27DCC61E00B0BFE8 /* AddProductCell.swift */; };
+		7503C8A727E07D37005B3E22 /* ChemicalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7503C8A627E07D37005B3E22 /* ChemicalsViewController.swift */; };
 		7545EF6327D9383E00868F55 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7545EF6127D9383D00868F55 /* ProductViewController.swift */; };
 		7545EF6927D93AAE00868F55 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7545EF6727D93AAE00868F55 /* ProductCell.swift */; };
 		7554FF3A27B82D3500A10963 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7554FF3927B82D3500A10963 /* LoginViewController.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		52F8FC3A38ADF8F2FB7EE222 /* Pods_Smart_Household.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smart_Household.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		750260EF27DCC61E00B0BFE8 /* AddProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddProductCell.swift; path = "Smart Household/AddProductCell.swift"; sourceTree = SOURCE_ROOT; };
+		7503C8A627E07D37005B3E22 /* ChemicalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemicalsViewController.swift; sourceTree = "<group>"; };
 		7545EF6127D9383D00868F55 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductViewController.swift; path = "Smart Household/ProductViewController.swift"; sourceTree = SOURCE_ROOT; };
 		7545EF6727D93AAE00868F55 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductCell.swift; path = "Smart Household/ProductCell.swift"; sourceTree = SOURCE_ROOT; };
 		7554FF3927B82D3500A10963 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				75C5004727DCCDE900082824 /* ProductCell.xib */,
 				7545EF6127D9383D00868F55 /* ProductViewController.swift */,
 				75C3798027DB9E5800ED5E03 /* ListViewController.swift */,
+				7503C8A627E07D37005B3E22 /* ChemicalsViewController.swift */,
 				75821B3F2731C090001DC20D /* AppDelegate.swift */,
 				75821B412731C090001DC20D /* SceneDelegate.swift */,
 				7554FF3927B82D3500A10963 /* LoginViewController.swift */,
@@ -238,6 +241,7 @@
 				75821B402731C090001DC20D /* AppDelegate.swift in Sources */,
 				750260F127DCC61E00B0BFE8 /* AddProductCell.swift in Sources */,
 				75CFDAA327DFBF9200C9322C /* Models.swift in Sources */,
+				7503C8A727E07D37005B3E22 /* ChemicalsViewController.swift in Sources */,
 				75C3798127DB9E5800ED5E03 /* ListViewController.swift in Sources */,
 				7545EF6927D93AAE00868F55 /* ProductCell.swift in Sources */,
 				7545EF6327D9383E00868F55 /* ProductViewController.swift in Sources */,

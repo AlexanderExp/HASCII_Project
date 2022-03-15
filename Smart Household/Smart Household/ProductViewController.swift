@@ -8,7 +8,7 @@
 import UIKit
 import Alamofire
 
-class ProductViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ProductViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, UITextViewDelegate {
     
     @IBOutlet var ProductTableView: UITableView!
     
@@ -25,21 +25,25 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
         self.ProductTableView.delegate = self
         self.ProductTableView.dataSource = self
         self.registerTableViewCells()
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         let AFGroup = DispatchGroup()
         
-        for i in 1...10 {
+        for i in 1...100 {
             AFGroup.enter()
-            AF.request("http://192.168.1.80:8000/products/" + String(i)).responseData { response in
+            AF.request("http://192.168.1.80:8000/products/" + String(i)).responseData { response in  //Поменять IP на свой
                 guard let data = response.value else { return }
                 do {
                     let serverresponse = try JSONDecoder().decode(ProductJSON.self, from: data)
-                    self.ProductID.append(serverresponse.id)
-                    self.ProductNames[serverresponse.id] = serverresponse.name
-                    self.ProductInfo[serverresponse.id] = serverresponse.description
-                    self.ProductAmmount[serverresponse.id] = serverresponse.count
-                    self.ProductMeasure[serverresponse.id] = serverresponse.measure
-                    self.ProductPicture[serverresponse.id] = serverresponse.picture
-                    self.ProductTags[serverresponse.id] = serverresponse.tag.components(separatedBy: ";")
+                    if serverresponse.tag.components(separatedBy: ";")[0] == "***PRODUCT***" {
+                        self.ProductID.append(serverresponse.id)
+                        self.ProductNames[serverresponse.id] = serverresponse.name
+                        self.ProductInfo[serverresponse.id] = serverresponse.description
+                        self.ProductAmmount[serverresponse.id] = serverresponse.count
+                        self.ProductMeasure[serverresponse.id] = serverresponse.measure
+                        self.ProductPicture[serverresponse.id] = serverresponse.picture
+                        self.ProductTags[serverresponse.id] = serverresponse.tag.components(separatedBy: ";")
+                    }
                     print(serverresponse.id)
                 } catch {
                     print(error)
@@ -49,6 +53,7 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
         }
             
             AFGroup.notify(queue: .main) {
+                self.ProductID.sort()
                 self.ProductTableView.reloadData()
                 }
 
@@ -68,13 +73,19 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
 
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cellID = "Product"
-        if indexPath[1] == (self.ProductTableView.numberOfRows(inSection: 0) - 1) {
-            cellID = "AddProduct"
+        if indexPath.row == (self.ProductTableView.numberOfRows(inSection: 0) - 1) {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "AddProduct", for: indexPath)
+            return cell
         }
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Product", for: indexPath) as! ProductCell
+        cell.CellName.delegate = self
+        cell.CellInfo.delegate = self
+        cell.CellCounter.delegate = self
+        let i = ProductID[indexPath.row]
+        cell.CellName.text = ProductNames[i]
+        cell.CellInfo.text = ProductInfo[i]
+        cell.CellButtons.value = Double(ProductAmmount[i]!)!
+        cell.CellCounter.text = (ProductAmmount[i]! + " " + ProductMeasure[i]!)
         return cell
     }
     
@@ -83,6 +94,29 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
         self.ProductTableView.register(ProductCellNib, forCellReuseIdentifier: "Product")
         ProductCellNib = UINib(nibName: "AddProductCell", bundle: nil)
         self.ProductTableView.register(ProductCellNib, forCellReuseIdentifier: "AddProduct")
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if(text == "\n") {
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
+    }
+    
+    @objc private func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            ProductTableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height, right: 0)
+        }
+    }
+
+    @objc private func keyboardWillHide(notification: NSNotification) {
+        ProductTableView.contentInset = .zero
     }
 
     /*

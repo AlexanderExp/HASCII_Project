@@ -8,7 +8,12 @@
 import UIKit
 
 class ProductCell: UITableViewCell {
-
+    @IBOutlet var CellName: UITextField!
+    @IBOutlet var CellInfo: UITextView!
+    @IBOutlet var CellImage: UIImageView!
+    @IBOutlet var CellCounter: UITextField!
+    @IBOutlet var CellButtons: UIStepper!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

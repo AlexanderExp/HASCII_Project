@@ -80,6 +80,13 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="CellButtons" destination="Z9j-ab-97q" id="rDl-SB-uiw"/>
+                <outlet property="CellCounter" destination="ljY-dn-1UI" id="Tbu-Ue-MQM"/>
+                <outlet property="CellImage" destination="5S8-Ph-LQn" id="S3Z-E2-3Zi"/>
+                <outlet property="CellInfo" destination="aL6-Td-1ye" id="Ol5-TY-Xry"/>
+                <outlet property="CellName" destination="jzl-n2-P1j" id="xYE-81-nhQ"/>
+            </connections>
             <point key="canvasLocation" x="137.68115942028987" y="201.5625"/>
         </tableViewCell>
     </objects>
