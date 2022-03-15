@@ -12,6 +12,8 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     @IBOutlet var ProductTableView: UITableView!
     
+    let RequestURL = "http://192.168.1.80:8000/products/" //Поменять IP на свой
+    
     var ProductID: [Int] = []
     var ProductNames: [Int:String] = [:]
     var ProductInfo: [Int:String] = [:]
@@ -19,6 +21,7 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
     var ProductMeasure: [Int:String] = [:]
     var ProductPicture: [Int:UIImage] = [:]
     var ProductTags: [Int:[String]] = [:]
+    var cellIDs: [Int:Int] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +34,7 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         for i in 1...100 {
             AFGroup.enter()
-            AF.request("http://192.168.1.80:8000/products/" + String(i)).responseData { response in  //Поменять IP на свой
+            AF.request(RequestURL + String(i)).responseData { response in
                 guard let data = response.value else { return }
                 do {
                     let serverresponse = try JSONDecoder().decode(ProductJSON.self, from: data)
@@ -94,6 +97,8 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.CellInfo.text = ProductInfo[i]
         cell.CellButtons.value = Double(ProductAmmount[i]!)!
         cell.CellCounter.text = (ProductAmmount[i]! + " " + ProductMeasure[i]!)
+        cell.cellID = i
+        cellIDs[indexPath.row] = i
         return cell
     }
     
@@ -126,6 +131,20 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
     @objc private func keyboardWillHide(notification: NSNotification) {
         ProductTableView.contentInset = .zero
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            AF.request(RequestURL + String(cellIDs[indexPath.row]!), method: .delete, parameters: nil, headers: nil).responseData { response in
+                guard let data = response.value else { return }
+            }
+            ProductID.remove(at: indexPath.row)
+            cellIDs.removeValue(forKey: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+        }
+    }
+
 
     /*
     // Override to support conditional editing of the table view.

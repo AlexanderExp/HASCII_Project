@@ -13,6 +13,7 @@ class ProductCell: UITableViewCell {
     @IBOutlet var CellImage: UIImageView!
     @IBOutlet var CellCounter: UITextField!
     @IBOutlet var CellButtons: UIStepper!
+    var cellID = 0
     
     override func awakeFromNib() {
         super.awakeFromNib()
