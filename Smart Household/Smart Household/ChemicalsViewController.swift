@@ -16,7 +16,7 @@ class ChemicalsViewController: UIViewController, UITableViewDelegate, UITableVie
     var ProductInfo: [Int:String] = [:]
     var ProductAmmount: [Int:String] = [:]
     var ProductMeasure: [Int:String] = [:]
-    var ProductPicture: [Int:String] = [:]
+    var ProductPicture: [Int:UIImage] = [:]
     var ProductTags: [Int:[String]] = [:]
     
     override func viewDidLoad() {
@@ -40,8 +40,12 @@ class ChemicalsViewController: UIViewController, UITableViewDelegate, UITableVie
                         self.ProductInfo[serverresponse.id] = serverresponse.description
                         self.ProductAmmount[serverresponse.id] = serverresponse.count
                         self.ProductMeasure[serverresponse.id] = serverresponse.measure
-                        self.ProductPicture[serverresponse.id] = serverresponse.picture
                         self.ProductTags[serverresponse.id] = serverresponse.tag.components(separatedBy: ";")
+                        if serverresponse.picture != "" {
+                            let imageurl = URL(string: serverresponse.picture)
+                            let imagedata = try? Data(contentsOf: imageurl!)
+                            self.ProductPicture[serverresponse.id] = UIImage(data: imagedata!)
+                        }
                     }
                     print(serverresponse.id)
                 } catch {
@@ -81,6 +85,10 @@ class ChemicalsViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.CellInfo.delegate = self
         cell.CellCounter.delegate = self
         let i = ProductID[indexPath.row]
+        if ProductPicture.keys.contains(i) {
+            cell.CellImage.contentMode = .scaleAspectFit
+            cell.CellImage.image = ProductPicture[i]
+        }
         cell.CellName.text = ProductNames[i]
         cell.CellInfo.text = ProductInfo[i]
         cell.CellButtons.value = Double(ProductAmmount[i]!)!
