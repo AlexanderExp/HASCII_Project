@@ -143,6 +143,19 @@ class ChemicalsViewController: UIViewController, UITableViewDelegate, UITableVie
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == self.ProductTableView.numberOfRows(inSection: 0) - 1 {
+            let newID = cellIDs[indexPath.row - 1]! + 1
+            self.ProductID.append(newID)
+            self.ProductNames[newID] = ""
+            self.ProductInfo[newID] = ""
+            self.ProductAmmount[newID] = "0"
+            self.ProductMeasure[newID] = "шт"
+            self.ProductTags[newID] = ["***CHEMICAL***"]
+            self.ProductTableView.reloadData()
+        }
+    }
 
 
     /*
