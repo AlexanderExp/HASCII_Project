@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		419C634FABAB718BB6E6D907 /* Pods_Smart_Household.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F8FC3A38ADF8F2FB7EE222 /* Pods_Smart_Household.framework */; };
+		750260F127DCC61E00B0BFE8 /* AddProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750260EF27DCC61E00B0BFE8 /* AddProductCell.swift */; };
+		7503C8A727E07D37005B3E22 /* ChemicalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7503C8A627E07D37005B3E22 /* ChemicalsViewController.swift */; };
+		7545EF6327D9383E00868F55 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7545EF6127D9383D00868F55 /* ProductViewController.swift */; };
+		7545EF6927D93AAE00868F55 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7545EF6727D93AAE00868F55 /* ProductCell.swift */; };
+		7554FF3A27B82D3500A10963 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7554FF3927B82D3500A10963 /* LoginViewController.swift */; };
+		75821B402731C090001DC20D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75821B3F2731C090001DC20D /* AppDelegate.swift */; };
+		75821B422731C090001DC20D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75821B412731C090001DC20D /* SceneDelegate.swift */; };
+		75821B472731C090001DC20D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75821B452731C090001DC20D /* Main.storyboard */; };
+		75821B492731C094001DC20D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75821B482731C094001DC20D /* Assets.xcassets */; };
+		75821B4C2731C094001DC20D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75821B4A2731C094001DC20D /* LaunchScreen.storyboard */; };
+		75C3798127DB9E5800ED5E03 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3798027DB9E5800ED5E03 /* ListViewController.swift */; };
+		75C5004527DCCDE900082824 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C5004727DCCDE900082824 /* ProductCell.xib */; };
+		75C5004A27DCCE0600082824 /* AddProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C5004C27DCCE0600082824 /* AddProductCell.xib */; };
+		75CFDAA327DFBF9200C9322C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFDAA227DFBF9200C9322C /* Models.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52F8FC3A38ADF8F2FB7EE222 /* Pods_Smart_Household.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smart_Household.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		750260EF27DCC61E00B0BFE8 /* AddProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddProductCell.swift; path = "Smart Household/AddProductCell.swift"; sourceTree = SOURCE_ROOT; };
+		7503C8A627E07D37005B3E22 /* ChemicalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemicalsViewController.swift; sourceTree = "<group>"; };
+		7545EF6127D9383D00868F55 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductViewController.swift; path = "Smart Household/ProductViewController.swift"; sourceTree = SOURCE_ROOT; };
+		7545EF6727D93AAE00868F55 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductCell.swift; path = "Smart Household/ProductCell.swift"; sourceTree = SOURCE_ROOT; };
+		7554FF3927B82D3500A10963 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		75821B3C2731C090001DC20D /* Smart Household.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Household.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75821B3F2731C090001DC20D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75821B412731C090001DC20D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		75821B462731C090001DC20D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75821B482731C094001DC20D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75821B4B2731C094001DC20D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75821B4D2731C094001DC20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75C3798027DB9E5800ED5E03 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = "Smart Household/ListViewController.swift"; sourceTree = SOURCE_ROOT; };
+		75C5004327DCCD5500082824 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		75C5004427DCCD5600082824 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		75C5004627DCCDE900082824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProductCell.xib; sourceTree = "<group>"; };
+		75C5004927DCCDED00082824 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/ProductCell.strings; sourceTree = "<group>"; };
+		75C5004B27DCCE0600082824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AddProductCell.xib; sourceTree = "<group>"; };
+		75C5004E27DCCE0B00082824 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/AddProductCell.strings; sourceTree = "<group>"; };
+		75CFDAA227DFBF9200C9322C /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = SOURCE_ROOT; };
+		BB0994658686F309EE8560EF /* Pods-Smart Household.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Household.release.xcconfig"; path = "Target Support Files/Pods-Smart Household/Pods-Smart Household.release.xcconfig"; sourceTree = "<group>"; };
+		F344E4BCC5494CF1EC39212C /* Pods-Smart Household.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Household.debug.xcconfig"; path = "Target Support Files/Pods-Smart Household/Pods-Smart Household.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75821B392731C090001DC20D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				419C634FABAB718BB6E6D907 /* Pods_Smart_Household.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		445690B2BB779B971213E848 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F344E4BCC5494CF1EC39212C /* Pods-Smart Household.debug.xcconfig */,
+				BB0994658686F309EE8560EF /* Pods-Smart Household.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		75821B332731C090001DC20D = {
+			isa = PBXGroup;
+			children = (
+				75821B3E2731C090001DC20D /* Smart Household */,
+				75821B3D2731C090001DC20D /* Products */,
+				445690B2BB779B971213E848 /* Pods */,
+				78C598537A036508E849C1E4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		75821B3D2731C090001DC20D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75821B3C2731C090001DC20D /* Smart Household.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75821B3E2731C090001DC20D /* Smart Household */ = {
+			isa = PBXGroup;
+			children = (
+				75CFDAA227DFBF9200C9322C /* Models.swift */,
+				750260EF27DCC61E00B0BFE8 /* AddProductCell.swift */,
+				75C5004C27DCCE0600082824 /* AddProductCell.xib */,
+				7545EF6727D93AAE00868F55 /* ProductCell.swift */,
+				75C5004727DCCDE900082824 /* ProductCell.xib */,
+				7545EF6127D9383D00868F55 /* ProductViewController.swift */,
+				75C3798027DB9E5800ED5E03 /* ListViewController.swift */,
+				7503C8A627E07D37005B3E22 /* ChemicalsViewController.swift */,
+				75821B3F2731C090001DC20D /* AppDelegate.swift */,
+				75821B412731C090001DC20D /* SceneDelegate.swift */,
+				7554FF3927B82D3500A10963 /* LoginViewController.swift */,
+				75821B452731C090001DC20D /* Main.storyboard */,
+				75821B482731C094001DC20D /* Assets.xcassets */,
+				75821B4A2731C094001DC20D /* LaunchScreen.storyboard */,
+				75821B4D2731C094001DC20D /* Info.plist */,
+			);
+			path = "Smart Household";
+			sourceTree = "<group>";
+		};
+		78C598537A036508E849C1E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52F8FC3A38ADF8F2FB7EE222 /* Pods_Smart_Household.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75821B3B2731C090001DC20D /* Smart Household */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75821B502731C094001DC20D /* Build configuration list for PBXNativeTarget "Smart Household" */;
+			buildPhases = (
+				F71A1DA48A2A9A65CBEB9443 /* [CP] Check Pods Manifest.lock */,
+				75821B382731C090001DC20D /* Sources */,
+				75821B392731C090001DC20D /* Frameworks */,
+				75821B3A2731C090001DC20D /* Resources */,
+				4E5FE74D47507831913F8C25 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Smart Household";
+			productName = "Smart Household";
+			productReference = 75821B3C2731C090001DC20D /* Smart Household.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75821B342731C090001DC20D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					75821B3B2731C090001DC20D = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 75821B372731C090001DC20D /* Build configuration list for PBXProject "Smart Household" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = 75821B332731C090001DC20D;
+			productRefGroup = 75821B3D2731C090001DC20D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75821B3B2731C090001DC20D /* Smart Household */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75821B3A2731C090001DC20D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75821B4C2731C094001DC20D /* LaunchScreen.storyboard in Resources */,
+				75C5004A27DCCE0600082824 /* AddProductCell.xib in Resources */,
+				75C5004527DCCDE900082824 /* ProductCell.xib in Resources */,
+				75821B492731C094001DC20D /* Assets.xcassets in Resources */,
+				75821B472731C090001DC20D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E5FE74D47507831913F8C25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Smart Household/Pods-Smart Household-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Smart Household/Pods-Smart Household-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Smart Household/Pods-Smart Household-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F71A1DA48A2A9A65CBEB9443 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Smart Household-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75821B382731C090001DC20D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7554FF3A27B82D3500A10963 /* LoginViewController.swift in Sources */,
+				75821B402731C090001DC20D /* AppDelegate.swift in Sources */,
+				750260F127DCC61E00B0BFE8 /* AddProductCell.swift in Sources */,
+				75CFDAA327DFBF9200C9322C /* Models.swift in Sources */,
+				7503C8A727E07D37005B3E22 /* ChemicalsViewController.swift in Sources */,
+				75C3798127DB9E5800ED5E03 /* ListViewController.swift in Sources */,
+				7545EF6927D93AAE00868F55 /* ProductCell.swift in Sources */,
+				7545EF6327D9383E00868F55 /* ProductViewController.swift in Sources */,
+				75821B422731C090001DC20D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		75821B452731C090001DC20D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75821B462731C090001DC20D /* Base */,
+				75C5004327DCCD5500082824 /* ru */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75821B4A2731C094001DC20D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75821B4B2731C094001DC20D /* Base */,
+				75C5004427DCCD5600082824 /* ru */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		75C5004727DCCDE900082824 /* ProductCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75C5004627DCCDE900082824 /* Base */,
+				75C5004927DCCDED00082824 /* ru */,
+			);
+			name = ProductCell.xib;
+			sourceTree = SOURCE_ROOT;
+		};
+		75C5004C27DCCE0600082824 /* AddProductCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75C5004B27DCCE0600082824 /* Base */,
+				75C5004E27DCCE0B00082824 /* ru */,
+			);
+			name = AddProductCell.xib;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75821B4E2731C094001DC20D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75821B4F2731C094001DC20D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75821B512731C094001DC20D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F344E4BCC5494CF1EC39212C /* Pods-Smart Household.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PL93HUUR5R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Smart Household/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ernokanst.Smart-Household";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75821B522731C094001DC20D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB0994658686F309EE8560EF /* Pods-Smart Household.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PL93HUUR5R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Smart Household/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ernokanst.Smart-Household";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75821B372731C090001DC20D /* Build configuration list for PBXProject "Smart Household" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75821B4E2731C094001DC20D /* Debug */,
+				75821B4F2731C094001DC20D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75821B502731C094001DC20D /* Build configuration list for PBXNativeTarget "Smart Household" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75821B512731C094001DC20D /* Debug */,
+				75821B522731C094001DC20D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75821B342731C090001DC20D /* Project object */;
+}

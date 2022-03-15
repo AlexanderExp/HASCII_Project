@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="190" id="KGk-i7-Jjw" customClass="ProductCell" customModule="Smart_Household" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5S8-Ph-LQn">
+                        <rect key="frame" x="16" y="16" width="94" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="RES-5p-YMm"/>
+                            <constraint firstAttribute="width" constant="94" id="YpC-Fc-Wq2"/>
+                            <constraint firstAttribute="height" constant="75" id="fZn-vM-X09"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Product Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jzl-n2-P1j">
+                        <rect key="frame" x="118" y="16" width="186" height="19"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Z9j-ab-97q">
+                        <rect key="frame" x="16" y="141" width="94" height="32"/>
+                        <connections>
+                            <action selector="ButtonPress:" destination="KGk-i7-Jjw" eventType="primaryActionTriggered" id="Khu-5f-dze"/>
+                        </connections>
+                    </stepper>
+                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ljY-dn-1UI">
+                        <rect key="frame" x="16" y="99" width="94" height="34"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="31"/>
+                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                    </textField>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aL6-Td-1ye">
+                        <rect key="frame" x="118" y="43" width="186" height="131"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Product Description "/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                <color key="value" systemColor="placeholderTextColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aL6-Td-1ye" firstAttribute="leading" secondItem="5S8-Ph-LQn" secondAttribute="trailing" constant="8" symbolic="YES" id="59Q-9D-ySb"/>
+                    <constraint firstAttribute="bottom" secondItem="aL6-Td-1ye" secondAttribute="bottom" constant="16" id="92N-qU-58R"/>
+                    <constraint firstAttribute="trailing" secondItem="jzl-n2-P1j" secondAttribute="trailing" constant="16" id="Bue-1t-Hlh"/>
+                    <constraint firstItem="ljY-dn-1UI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="FaN-Ac-4VT"/>
+                    <constraint firstItem="jzl-n2-P1j" firstAttribute="leading" secondItem="5S8-Ph-LQn" secondAttribute="trailing" constant="8" symbolic="YES" id="Jie-D6-K5g"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="aL6-Td-1ye" secondAttribute="bottom" constant="16" id="KFR-dP-vk5"/>
+                    <constraint firstItem="aL6-Td-1ye" firstAttribute="leading" secondItem="5S8-Ph-LQn" secondAttribute="trailing" constant="8" symbolic="YES" id="KYs-vF-GHe"/>
+                    <constraint firstItem="Z9j-ab-97q" firstAttribute="top" secondItem="ljY-dn-1UI" secondAttribute="bottom" constant="8" symbolic="YES" id="QuD-xb-XGZ"/>
+                    <constraint firstItem="5S8-Ph-LQn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="SeB-F6-eXs"/>
+                    <constraint firstItem="ljY-dn-1UI" firstAttribute="top" secondItem="5S8-Ph-LQn" secondAttribute="bottom" constant="8" symbolic="YES" id="T47-Ka-njQ"/>
+                    <constraint firstItem="jzl-n2-P1j" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="U3Y-fM-CFl"/>
+                    <constraint firstItem="aL6-Td-1ye" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="16" id="UB2-e5-huP"/>
+                    <constraint firstItem="ljY-dn-1UI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="XYN-Ft-aFG"/>
+                    <constraint firstItem="aL6-Td-1ye" firstAttribute="top" secondItem="jzl-n2-P1j" secondAttribute="bottom" constant="8" symbolic="YES" id="YTM-kH-BUK"/>
+                    <constraint firstAttribute="trailing" secondItem="aL6-Td-1ye" secondAttribute="trailing" constant="16" id="c6d-ak-2DM"/>
+                    <constraint firstItem="Z9j-ab-97q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="dBF-yH-ETb"/>
+                    <constraint firstItem="aL6-Td-1ye" firstAttribute="leading" secondItem="ljY-dn-1UI" secondAttribute="trailing" constant="8" symbolic="YES" id="ePN-Lh-5Km"/>
+                    <constraint firstItem="aL6-Td-1ye" firstAttribute="top" secondItem="jzl-n2-P1j" secondAttribute="bottom" constant="8" symbolic="YES" id="eps-mz-bSg"/>
+                    <constraint firstItem="ljY-dn-1UI" firstAttribute="top" secondItem="5S8-Ph-LQn" secondAttribute="bottom" constant="8" symbolic="YES" id="fNu-qp-ubK"/>
+                    <constraint firstItem="ljY-dn-1UI" firstAttribute="width" secondItem="5S8-Ph-LQn" secondAttribute="width" id="hrO-zg-eW8"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Z9j-ab-97q" secondAttribute="bottom" constant="6" id="prk-ZT-LCU"/>
+                    <constraint firstItem="aL6-Td-1ye" firstAttribute="leading" secondItem="ljY-dn-1UI" secondAttribute="trailing" constant="8" symbolic="YES" id="qVc-JQ-cxE"/>
+                    <constraint firstItem="aL6-Td-1ye" firstAttribute="top" secondItem="jzl-n2-P1j" secondAttribute="bottom" constant="8" symbolic="YES" id="s88-8d-R5e"/>
+                    <constraint firstItem="Z9j-ab-97q" firstAttribute="width" secondItem="5S8-Ph-LQn" secondAttribute="width" id="wIY-ws-eza"/>
+                    <constraint firstItem="5S8-Ph-LQn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="yDj-TE-Ytq"/>
+                    <constraint firstItem="Z9j-ab-97q" firstAttribute="top" secondItem="ljY-dn-1UI" secondAttribute="bottom" constant="8" symbolic="YES" id="zaE-2k-Gn4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="CellButtons" destination="Z9j-ab-97q" id="rDl-SB-uiw"/>
+                <outlet property="CellCounter" destination="ljY-dn-1UI" id="Tbu-Ue-MQM"/>
+                <outlet property="CellImage" destination="5S8-Ph-LQn" id="S3Z-E2-3Zi"/>
+                <outlet property="CellInfo" destination="aL6-Td-1ye" id="Ol5-TY-Xry"/>
+                <outlet property="CellName" destination="jzl-n2-P1j" id="xYE-81-nhQ"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="201.5625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

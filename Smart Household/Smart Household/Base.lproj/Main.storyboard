@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tJu-NN-15t">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Smart_Household" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart Household" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsA-N1-uWT">
+                                <rect key="frame" x="52" y="10" width="271" height="43"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0yr-gL-mHc">
+                                <rect key="frame" x="20" y="316.5" width="335" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="username"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nhb-nn-pmg">
+                                <rect key="frame" x="20" y="360.5" width="335" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRG-0m-M2Y">
+                                <rect key="frame" x="100" y="404.5" width="175" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sign in">
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Nhb-nn-pmg" secondAttribute="trailing" id="7TZ-fG-Ktw"/>
+                            <constraint firstItem="0yr-gL-mHc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AJa-36-y7S"/>
+                            <constraint firstItem="hRG-0m-M2Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="IDc-AU-I72"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0yr-gL-mHc" secondAttribute="trailing" id="St2-6B-g7u"/>
+                            <constraint firstItem="0yr-gL-mHc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TmE-kL-qra"/>
+                            <constraint firstItem="XsA-N1-uWT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tva-Jn-NDl"/>
+                            <constraint firstItem="Nhb-nn-pmg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZRS-Ns-LXu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hRG-0m-M2Y" secondAttribute="trailing" constant="100" id="aNN-OM-WLr"/>
+                            <constraint firstItem="hRG-0m-M2Y" firstAttribute="top" secondItem="Nhb-nn-pmg" secondAttribute="bottom" constant="10" id="fJ6-wM-iUH"/>
+                            <constraint firstItem="XsA-N1-uWT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="jXK-g5-SDf"/>
+                            <constraint firstItem="0yr-gL-mHc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sZ8-Ou-2Oh"/>
+                            <constraint firstItem="Nhb-nn-pmg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xS8-ri-3if"/>
+                            <constraint firstItem="Nhb-nn-pmg" firstAttribute="top" secondItem="0yr-gL-mHc" secondAttribute="bottom" constant="10" id="zRO-06-Lln"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73" y="822"/>
+        </scene>
+        <!--Smart Household-->
+        <scene sceneID="b0S-jJ-UrH">
+            <objects>
+                <viewController id="y0O-VP-Yhu" customClass="ProductViewController" customModule="Smart_Household" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M0Y-XO-lDq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZmV-62-in2">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Product" id="cAt-PN-Jpe" customClass="ProductCell" customModule="Smart_Household" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cAt-PN-Jpe" id="smM-00-3dP">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AddProduct" id="UoX-4T-3OC" customClass="AddProductCell" customModule="Smart_Household" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UoX-4T-3OC" id="Cah-Ac-KE8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dQq-mR-tj8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZmV-62-in2" firstAttribute="leading" secondItem="dQq-mR-tj8" secondAttribute="leading" id="7ec-KH-opk"/>
+                            <constraint firstItem="ZmV-62-in2" firstAttribute="trailing" secondItem="dQq-mR-tj8" secondAttribute="trailing" id="ECn-Hu-SMz"/>
+                            <constraint firstItem="ZmV-62-in2" firstAttribute="top" secondItem="dQq-mR-tj8" secondAttribute="top" id="gNn-Vr-6eb"/>
+                            <constraint firstItem="ZmV-62-in2" firstAttribute="bottom" secondItem="dQq-mR-tj8" secondAttribute="bottom" id="qfs-fq-HgT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Smart Household" id="GqZ-en-A4e">
+                        <barButtonItem key="rightBarButtonItem" image="questionmark" catalog="system" id="RXU-ln-1Q2">
+                            <connections>
+                                <segue destination="Sfj-ZX-uta" kind="show" id="nKo-Md-tn4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ProductTableView" destination="ZmV-62-in2" id="8HK-OD-mfg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cw3-YD-4XE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2728.8000000000002" y="662.51874062968523"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Qt6-Ki-GvO">
+            <objects>
+                <viewController id="Sfj-ZX-uta" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UJQ-0F-Zxh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart Household" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cac-vk-bUm">
+                                <rect key="frame" x="52" y="104" width="271" height="43"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 0.0.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayz-AX-RGv">
+                                <rect key="frame" x="139.5" y="323" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Mj-Ap-oyW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ayz-AX-RGv" firstAttribute="centerX" secondItem="UJQ-0F-Zxh" secondAttribute="centerX" id="Bba-XX-TyD"/>
+                            <constraint firstItem="Ayz-AX-RGv" firstAttribute="centerY" secondItem="UJQ-0F-Zxh" secondAttribute="centerY" id="J5K-il-PTw"/>
+                            <constraint firstItem="Cac-vk-bUm" firstAttribute="centerX" secondItem="UJQ-0F-Zxh" secondAttribute="centerX" id="erM-SK-gZZ"/>
+                            <constraint firstItem="Cac-vk-bUm" firstAttribute="top" secondItem="8Mj-Ap-oyW" secondAttribute="top" constant="60" id="nCi-OL-oKA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kSZ-qV-TmP">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="JjQ-LU-DFL"/>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LeJ-JM-LXD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3863" y="382"/>
+        </scene>
+        <!--Smart Household-->
+        <scene sceneID="v4n-vC-LKM">
+            <objects>
+                <viewController id="7AX-jT-CGo" customClass="ChemicalsViewController" customModule="Smart_Household" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TdJ-Kl-OWd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tMu-Ls-0Mx">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Product" id="I4S-mc-gun" customClass="ProductCell" customModule="Smart_Household" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I4S-mc-gun" id="9CY-e3-mU7">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AddProduct" id="jm6-iu-C1r" customClass="AddProductCell" customModule="Smart_Household" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jm6-iu-C1r" id="bqu-zy-vcG">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AGZ-23-3cl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tMu-Ls-0Mx" firstAttribute="top" secondItem="AGZ-23-3cl" secondAttribute="top" id="ATE-4P-4Ne"/>
+                            <constraint firstItem="tMu-Ls-0Mx" firstAttribute="bottom" secondItem="AGZ-23-3cl" secondAttribute="bottom" id="j5I-fU-7SK"/>
+                            <constraint firstItem="tMu-Ls-0Mx" firstAttribute="leading" secondItem="AGZ-23-3cl" secondAttribute="leading" id="mhu-Dj-k1i"/>
+                            <constraint firstItem="tMu-Ls-0Mx" firstAttribute="trailing" secondItem="AGZ-23-3cl" secondAttribute="trailing" id="urx-mv-TG4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Smart Household" id="tLx-lf-paN">
+                        <barButtonItem key="rightBarButtonItem" image="questionmark" catalog="system" id="0M5-Dt-gST">
+                            <connections>
+                                <segue destination="Sfj-ZX-uta" kind="show" id="eEL-Ou-Cnj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ProductTableView" destination="tMu-Ls-0Mx" id="2UP-fU-nuZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Yd-IR-OTe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2728.8000000000002" y="1362.3688155922041"/>
+        </scene>
+        <!--Smart Household-->
+        <scene sceneID="nGh-ra-w8K">
+            <objects>
+                <viewController id="itA-fA-1xu" customClass="ListViewController" customModule="Smart_Household" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pcj-5I-IdV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="u1Z-B7-OqJ">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Product" id="IBz-hX-Lyv" customClass="ProductCell" customModule="Smart_Household" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IBz-hX-Lyv" id="SaD-cf-j9X">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AddProduct" id="vT9-LH-crn" customClass="AddProductCell" customModule="Smart_Household" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vT9-LH-crn" id="9KI-a5-vWJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EsQ-fR-AHx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u1Z-B7-OqJ" firstAttribute="top" secondItem="EsQ-fR-AHx" secondAttribute="top" id="7fw-NM-NBx"/>
+                            <constraint firstItem="u1Z-B7-OqJ" firstAttribute="trailing" secondItem="EsQ-fR-AHx" secondAttribute="trailing" id="ErG-zW-ifc"/>
+                            <constraint firstItem="u1Z-B7-OqJ" firstAttribute="bottom" secondItem="EsQ-fR-AHx" secondAttribute="bottom" id="HsJ-8l-xxr"/>
+                            <constraint firstItem="u1Z-B7-OqJ" firstAttribute="leading" secondItem="EsQ-fR-AHx" secondAttribute="leading" id="WNs-uI-dlU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Smart Household" id="s5s-tk-7J1">
+                        <barButtonItem key="rightBarButtonItem" image="questionmark" catalog="system" id="wJ9-hP-g9M">
+                            <connections>
+                                <segue destination="Sfj-ZX-uta" kind="show" id="nb1-qm-kXE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ProductTableView" destination="u1Z-B7-OqJ" id="P35-Va-2s1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="daY-wM-fv1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2730.4000000000001" y="-30.134932533733135"/>
+        </scene>
+        <!--Smart Household-->
+        <scene sceneID="RGT-so-wjl">
+            <objects>
+                <tabBarController title="Smart Household" id="tJu-NN-15t" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Nl9-pI-i83">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="owq-wX-Utf" kind="relationship" relationship="viewControllers" id="hZ0-FW-2Ta"/>
+                        <segue destination="97Q-Ir-pyP" kind="relationship" relationship="viewControllers" id="DNi-QW-na5"/>
+                        <segue destination="m2W-JY-IsC" kind="relationship" relationship="viewControllers" id="Stj-ej-c4Z"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O7l-Ru-q4P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="871" y="275"/>
+        </scene>
+        <!--Shopping List-->
+        <scene sceneID="JeS-bF-18S">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="owq-wX-Utf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Shopping List" image="list.bullet.rectangle.portrait" catalog="system" id="g1l-rf-urI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v64-Y2-8Sb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="itA-fA-1xu" kind="relationship" relationship="rootViewController" id="Rz9-Bk-BFu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n8g-NS-3gZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1791.2" y="-30.134932533733135"/>
+        </scene>
+        <!--Products-->
+        <scene sceneID="2Or-jq-54y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="97Q-Ir-pyP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Products" image="takeoutbag.and.cup.and.straw" catalog="system" id="h3O-c8-PqM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lc3-nc-4Qs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="y0O-VP-Yhu" kind="relationship" relationship="rootViewController" id="OLv-Qe-kQY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dzi-6T-Z6l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1789.5999999999999" y="662.51874062968523"/>
+        </scene>
+        <!--Chemicals-->
+        <scene sceneID="0pI-eb-3N3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m2W-JY-IsC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chemicals" image="testtube.2" catalog="system" id="KyC-On-eCQ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2rS-5d-2Zr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7AX-jT-CGo" kind="relationship" relationship="rootViewController" id="Foe-Uw-4wc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1xg-5u-qqx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1789.5999999999999" y="1362.3688155922041"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="eEL-Ou-Cnj"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
+        <image name="questionmark" catalog="system" width="96" height="128"/>
+        <image name="takeoutbag.and.cup.and.straw" catalog="system" width="128" height="110"/>
+        <image name="testtube.2" catalog="system" width="128" height="118"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

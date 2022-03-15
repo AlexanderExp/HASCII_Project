@@ -1,0 +1,7 @@
+platform :ios, '15.0'
+
+target 'Smart Household' do
+  use_frameworks!
+  pod 'Alamofire', '~> 5.5'
+  pod 'UITextView+Placeholder'
+end
